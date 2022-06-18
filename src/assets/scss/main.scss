@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&family=Ubuntu:wght@500&display=swap');
+
+.topbar {
+    background-color: #2D3E52;
+    padding: 0.7rem;
+    box-shadow: none;
+    .dropdown-menu {
+        left: -6rem;
+        padding: 10px;
+        .dropdown-item {
+            font-size: 17px;
+            cursor: pointer;
+        }
+        hr {
+            padding: 0;
+            margin: 4px;
+        }
+    }
+    .app-logo {
+        width: 38px;
+        height: 38px;
+    }
+    .app-name {
+        font-size: 24px;
+        color: #ffffff;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .user-img {
+        border-radius: 100%;
+        width: 82px;
+        height: 70px;
+    }
+}
+
+.dashboard {
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    .main-menu {
+        background-image: linear-gradient(180deg, #2D3E52 25%, #F9F9F9 25%);
+        overflow-y: auto;
+        overflow-x: hidden;
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100% !important;
+            .card {
+                border-radius: 20px;
+                width: 80%;
+            }
+        }
+    }
+    .main-menu-child {}
+
+    .sidebar {
+        background-color: #2D3E52;
+        z-index: 1;
+        box-shadow: 4px 1px 45px 2px rgba(0,0,0,0.06);
+        .sidebar-child {
+            border-radius: 0px 20px 0px 0px; /*TL TR BR BL*/
+            background-color: white;
+        }
+        .nav {
+            margin-top: 10px;
+            width: 100%;
+            .nav-item {
+                width: 100%;
+                padding-left: 10px;
+                &:nth-child(2) {
+                    background-color: rgb(241, 241, 241);
+                }
+                .nav-link {
+                    font-size: 17px;
+                    color: #3f3f3f;
+                }
+                i {
+                    margin-left: 3px;
+                    color: #F88D2A;
+                }
+                span {
+                    margin-left: 10px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        .main-menu {
+            .home .card {
+                width: 100%;
+            }
+        }
+    }
+    .topbar {
+        .app-logo {
+            width: 34px;
+            height: 34px;
+        }
+        .app-name {
+            font-size: 21px;
+        }
+        .user-img {
+            width: 67px;
+            height: 55px;
+        }
+    }
+    .dashboard {
+        top: 77px;
+    }
+}

@@ -1,7 +1,8 @@
 <template>
-  <div class="container">
-    <div class="row align-items-center profile-header">
-      <div class="col-md-2 mb-3">
+ <div class="home container">
+  <div class="card p-4 mb-3">
+    <div class="row align-items-center profile-header mb-2">
+      <div class="col-md-2">
         <img
           :src="user?.picture"
           alt="User's profile picture"
@@ -15,8 +16,9 @@
     </div>
 
     <div class="row">
-      <pre v-highlightjs><code class="json">{{JSON.stringify(auth0, null, 2)}}</code></pre>
+      <pre v-highlightjs><code class="json">{{JSON.stringify(user, null, 2)}}</code></pre>
     </div>
+  </div>
   </div>
 </template>
 
