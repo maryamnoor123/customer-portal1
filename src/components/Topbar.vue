@@ -2,7 +2,7 @@
   <nav class="topbar navbar fixed-top">
     <div class="container-fluid">
       <div>
-        <img class="app-logo" src="../assets/img/viaphoton-logo.png" alt="" />
+      <img class="app-logo" src="../assets/img/viaphoton-logo.png" alt="" />
         <span class="app-name">Customer Portal</span>
       </div>
       <div class="d-flex">
